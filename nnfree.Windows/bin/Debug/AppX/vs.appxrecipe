@@ -8,7 +8,7 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>3812d523-070e-4503-88f1-1f71d0861949</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\nnfree.Windows\obj\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>BE98D3B25812F407C07A70A3E3974E896F647B1DEB833F0396B3582104F8FEA8</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>22F9DDF28023E65EEA69D5C2DF1ECF2DD52893325D88A25E63B0ABBB4C07D0F3</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>3812d523-070e-4503-88f1-1f71d0861949_1.0.0.0_neutral__yzekw4x8qxe1g</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>3812d523-070e-4503-88f1-1f71d0861949_yzekw4x8qxe1g!App</RegisteredUserModeAppID>
     <RegisteredPackageID>3812d523-070e-4503-88f1-1f71d0861949</RegisteredPackageID>
@@ -20,13 +20,13 @@
     <AppXManifest Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\nnfree.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-04T14:10:56.765</Modified>
+      <Modified>2015-02-07T06:49:32.779</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\nnfree.Windows\bin\Debug\nnfree.Windows.exe">
       <PackagePath>nnfree.Windows.exe</PackagePath>
-      <Modified>2015-02-04T14:04:05.355</Modified>
+      <Modified>2015-02-07T08:02:40.991</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\References\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI.winmd">
       <PackagePath>Microsoft.Advertising.WinRT.UI.winmd</PackagePath>
@@ -128,17 +128,21 @@
       <PackagePath>App.xbf</PackagePath>
       <Modified>2015-02-04T12:26:08.793</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\nnfree.Windows\bin\Debug\ListPage.xbf">
+      <PackagePath>ListPage.xbf</PackagePath>
+      <Modified>2015-02-07T08:02:40.690</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\nnfree.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-02-04T14:04:04.822</Modified>
+      <Modified>2015-02-07T08:00:21.843</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\nnfree.Windows\bin\Debug\nnfree.Windows.xr.xml">
       <PackagePath>nnfree.Windows.xr.xml</PackagePath>
-      <Modified>2015-02-04T08:11:17.850</Modified>
+      <Modified>2015-02-07T08:02:40.665</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\nnfree.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-02-04T14:10:51.217</Modified>
+      <Modified>2015-02-07T06:49:14.530</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -95,6 +95,9 @@
     <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\nnfree.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\nnfree.Windows\bin\Debug\ListPage.xbf">
+      <PackagePath>ListPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\nnfree.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>

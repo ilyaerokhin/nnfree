@@ -6,54 +6,57 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:UI="using:Microsoft.Advertising.WinRT.UI"
     x:Class="nnfree.MainPage"
-    mc:Ignorable="d" Background="White" BorderBrush="White">
+    mc:Ignorable="d" BorderBrush="White">
+    <Page.Background>
+        <ImageBrush Stretch="Fill"/>
+    </Page.Background>
 
     <Grid>
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="Resourses/fon.jpg"/>
         </Grid.Background>
         <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
-            <TextBlock HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" Text="Бесплатный Нижний" VerticalAlignment="Top" Foreground="Black" FontSize="50" Width="475"/>
+            <TextBlock HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" Text="Бесплатный Нижний" VerticalAlignment="Top" Foreground="Black" FontSize="50" Width="475" FontFamily="Segoe UI Emoji"/>
 
-            <Image Source="/Resourses/red.png" HorizontalAlignment="Left" Height="235" Margin="0,100,0,0" VerticalAlignment="Top" Width="235"/>
-            <TextBlock HorizontalAlignment="Left" Margin="20,294,0,0" TextWrapping="Wrap" Text="Женские вещи" VerticalAlignment="Top" FontSize="25"/>
-            <Image Source="/Resourses/women.png" HorizontalAlignment="Left" Height="100" Margin="70,160,0,0" VerticalAlignment="Top" Width="100"/>
+            <Image Source="/Resourses/red.png" HorizontalAlignment="Left" Height="235" Margin="0,100,0,0" VerticalAlignment="Top" Width="235" Tapped="Go_to_women"/>
+            <TextBlock HorizontalAlignment="Left" Margin="20,294,0,0" TextWrapping="Wrap" Text="Женские вещи" VerticalAlignment="Top" FontSize="25" Tapped="Go_to_women"/>
+            <Image Source="/Resourses/women.png" HorizontalAlignment="Left" Height="100" Margin="70,160,0,0" VerticalAlignment="Top" Width="100" Tapped="Go_to_women"/>
 
-            <Image Source="/Resourses/red.png" HorizontalAlignment="Left" Height="235" Margin="244,100,0,0" VerticalAlignment="Top" Width="235"/>
-            <TextBlock HorizontalAlignment="Left" Margin="262,294,0,0" TextWrapping="Wrap" Text="Мужские вещи" VerticalAlignment="Top" FontSize="25"/>
-            <Image Source="/Resourses/men.png" HorizontalAlignment="Left" Height="100" Margin="314,160,0,0" VerticalAlignment="Top" Width="100"/>
+            <Image Source="/Resourses/red.png" HorizontalAlignment="Left" Height="235" Margin="244,100,0,0" VerticalAlignment="Top" Width="235" Tapped="Go_to_men"/>
+            <TextBlock HorizontalAlignment="Left" Margin="262,294,0,0" TextWrapping="Wrap" Text="Мужские вещи" VerticalAlignment="Top" FontSize="25" Tapped="Go_to_men"/>
+            <Image Source="/Resourses/men.png" HorizontalAlignment="Left" Height="100" Margin="314,160,0,0" VerticalAlignment="Top" Width="100" Tapped="Go_to_men"/>
 
-            <Image Source="/Resourses/red.png" HorizontalAlignment="Left" Height="235" Margin="488,100,0,0" VerticalAlignment="Top" Width="235"/>
-            <TextBlock HorizontalAlignment="Left" Margin="508,294,0,0" TextWrapping="Wrap" Text="Детские вещи" VerticalAlignment="Top" FontSize="25"/>
-            <Image Source="/Resourses/child.png" HorizontalAlignment="Left" Height="100" Margin="558,160,0,0" VerticalAlignment="Top" Width="100"/>
+            <Image Source="/Resourses/red.png" HorizontalAlignment="Left" Height="235" Margin="488,100,0,0" VerticalAlignment="Top" Width="235" Tapped="Go_to_child"/>
+            <TextBlock HorizontalAlignment="Left" Margin="508,294,0,0" TextWrapping="Wrap" Text="Детские вещи" VerticalAlignment="Top" FontSize="25" Tapped="Go_to_child"/>
+            <Image Source="/Resourses/child.png" HorizontalAlignment="Left" Height="100" Margin="558,160,0,0" VerticalAlignment="Top" Width="100" Tapped="Go_to_child"/>
 
-            <Image Source="/Resourses/red.png" HorizontalAlignment="Left" Height="235" Margin="732,100,0,0" VerticalAlignment="Top" Width="235"/>
-            <TextBlock HorizontalAlignment="Left" Margin="752,294,0,0" TextWrapping="Wrap" Text="Техника" VerticalAlignment="Top" FontSize="25"/>
-            <Image Source="/Resourses/tech.png" HorizontalAlignment="Left" Height="100" Margin="802,160,0,0" VerticalAlignment="Top" Width="100"/>
+            <Image Source="/Resourses/red.png" HorizontalAlignment="Left" Height="235" Margin="732,100,0,0" VerticalAlignment="Top" Width="235" Tapped="Go_to_tech"/>
+            <TextBlock HorizontalAlignment="Left" Margin="752,294,0,0" TextWrapping="Wrap" Text="Техника" VerticalAlignment="Top" FontSize="25" Tapped="Go_to_tech"/>
+            <Image Source="/Resourses/tech.png" HorizontalAlignment="Left" Height="100" Margin="802,160,0,0" VerticalAlignment="Top" Width="100" Tapped="Go_to_tech"/>
 
-            <Image Source="/Resourses/red.png" HorizontalAlignment="Left" Height="235" Margin="977,100,0,0" VerticalAlignment="Top" Width="235"/>
-            <TextBlock HorizontalAlignment="Left" Margin="997,294,0,0" TextWrapping="Wrap" Text="Косметика" VerticalAlignment="Top" FontSize="25"/>
-            <Image Source="/Resourses/makeup.png" HorizontalAlignment="Left" Height="100" Margin="1047,160,0,0" VerticalAlignment="Top" Width="100"/>
+            <Image Source="/Resourses/red.png" HorizontalAlignment="Left" Height="235" Margin="977,100,0,0" VerticalAlignment="Top" Width="235" Tapped="Go_to_makeup"/>
+            <TextBlock HorizontalAlignment="Left" Margin="997,294,0,0" TextWrapping="Wrap" Text="Косметика" VerticalAlignment="Top" FontSize="25" Tapped="Go_to_makeup"/>
+            <Image Source="/Resourses/makeup.png" HorizontalAlignment="Left" Height="100" Margin="1047,160,0,0" VerticalAlignment="Top" Width="100" Tapped="Go_to_makeup"/>
 
-            <Image Source="/Resourses/red.png" HorizontalAlignment="Left" Height="235" Margin="977,343,0,0" VerticalAlignment="Top" Width="235"/>
-            <TextBlock HorizontalAlignment="Left" Margin="997,538,-2,0" TextWrapping="Wrap" Text="Другое" VerticalAlignment="Top" FontSize="25"/>
-            <Image Source="/Resourses/others.png" HorizontalAlignment="Left" Height="100" Margin="1047,406,0,0" VerticalAlignment="Top" Width="100"/>
+            <Image Source="/Resourses/red.png" HorizontalAlignment="Left" Height="235" Margin="977,343,0,0" VerticalAlignment="Top" Width="235" Tapped="Go_to_others"/>
+            <TextBlock HorizontalAlignment="Left" Margin="997,538,-2,0" TextWrapping="Wrap" Text="Другое" VerticalAlignment="Top" FontSize="25" Tapped="Go_to_others"/>
+            <Image Source="/Resourses/others.png" HorizontalAlignment="Left" Height="100" Margin="1047,406,0,0" VerticalAlignment="Top" Width="100" Tapped="Go_to_others"/>
 
-            <Image Source="/Resourses/red.png" HorizontalAlignment="Left" Height="235" Margin="732,343,0,0" VerticalAlignment="Top" Width="235"/>
-            <TextBlock HorizontalAlignment="Left" Margin="752,538,-2,0" TextWrapping="Wrap" Text="Спорт" VerticalAlignment="Top" FontSize="25"/>
-            <Image Source="/Resourses/sport.png" HorizontalAlignment="Left" Height="100" Margin="802,406,0,0" VerticalAlignment="Top" Width="100"/>
+            <Image Source="/Resourses/red.png" HorizontalAlignment="Left" Height="235" Margin="732,343,0,0" VerticalAlignment="Top" Width="235" Tapped="Go_to_sport"/>
+            <TextBlock HorizontalAlignment="Left" Margin="752,538,-2,0" TextWrapping="Wrap" Text="Спорт" VerticalAlignment="Top" FontSize="25" Tapped="Go_to_sport"/>
+            <Image Source="/Resourses/sport.png" HorizontalAlignment="Left" Height="100" Margin="802,406,0,0" VerticalAlignment="Top" Width="100" Tapped="Go_to_sport"/>
 
-            <Image Source="/Resourses/red.png" HorizontalAlignment="Left" Height="235" Margin="488,343,0,0" VerticalAlignment="Top" Width="235"/>
-            <TextBlock HorizontalAlignment="Left" Margin="508,538,-2,0" TextWrapping="Wrap" Text="Книги" VerticalAlignment="Top" FontSize="25"/>
-            <Image Source="/Resourses/books.png" HorizontalAlignment="Left" Height="100" Margin="558,406,0,0" VerticalAlignment="Top" Width="100"/>
+            <Image Source="/Resourses/red.png" HorizontalAlignment="Left" Height="235" Margin="488,343,0,0" VerticalAlignment="Top" Width="235" Tapped="Go_to_books"/>
+            <TextBlock HorizontalAlignment="Left" Margin="508,538,-2,0" TextWrapping="Wrap" Text="Книги" VerticalAlignment="Top" FontSize="25" Tapped="Go_to_books"/>
+            <Image Source="/Resourses/books.png" HorizontalAlignment="Left" Height="100" Margin="558,406,0,0" VerticalAlignment="Top" Width="100" Tapped="Go_to_books"/>
 
-            <Image Source="/Resourses/red.png" HorizontalAlignment="Left" Height="235" Margin="244,343,0,0" VerticalAlignment="Top" Width="235"/>
-            <TextBlock HorizontalAlignment="Left" Margin="264,538,-2,0" TextWrapping="Wrap" Text="Услуги" VerticalAlignment="Top" FontSize="25"/>
-            <Image Source="/Resourses/services.png" HorizontalAlignment="Left" Height="100" Margin="314,406,0,0" VerticalAlignment="Top" Width="100"/>
+            <Image Source="/Resourses/red.png" HorizontalAlignment="Left" Height="235" Margin="244,343,0,0" VerticalAlignment="Top" Width="235" Tapped="Go_to_services"/>
+            <TextBlock HorizontalAlignment="Left" Margin="264,538,-2,0" TextWrapping="Wrap" Text="Услуги" VerticalAlignment="Top" FontSize="25" Tapped="Go_to_services"/>
+            <Image Source="/Resourses/services.png" HorizontalAlignment="Left" Height="100" Margin="314,406,0,0" VerticalAlignment="Top" Width="100" Tapped="Go_to_services"/>
 
-            <Image Source="/Resourses/red.png" HorizontalAlignment="Left" Height="235" Margin="0,343,0,0" VerticalAlignment="Top" Width="235"/>
-            <TextBlock HorizontalAlignment="Left" Margin="20,538,-2,0" TextWrapping="Wrap" Text="Животные" VerticalAlignment="Top" FontSize="25"/>
-            <Image Source="/Resourses/animals.png" HorizontalAlignment="Left" Height="100" Margin="70,406,0,0" VerticalAlignment="Top" Width="100"/>
+            <Image Source="/Resourses/red.png" HorizontalAlignment="Left" Height="235" Margin="0,343,0,0" VerticalAlignment="Top" Width="235" Tapped="Go_to_animals"/>
+            <TextBlock HorizontalAlignment="Left" Margin="20,538,-2,0" TextWrapping="Wrap" Text="Животные" VerticalAlignment="Top" FontSize="25" Tapped="Go_to_animals"/>
+            <Image Source="/Resourses/animals.png" HorizontalAlignment="Left" Height="100" Margin="70,406,0,0" VerticalAlignment="Top" Width="100" Tapped="Go_to_animals"/>
         </Grid>
     </Grid>
 </Page>

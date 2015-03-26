@@ -26,5 +26,55 @@ namespace nnfree
         {
             this.InitializeComponent();
         }
+
+        private void Go_to_women(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ListPage), "women");
+        }
+
+        private void Go_to_men(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ListPage), "men");
+        }
+
+        private void Go_to_child(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ListPage), "child");
+        }
+
+        private void Go_to_tech(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ListPage), "tech");
+        }
+
+        private void Go_to_makeup(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ListPage), "makeup");
+        }
+
+        private void Go_to_animals(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ListPage), "animals");
+        }
+
+        private void Go_to_services(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ListPage), "services");
+        }
+
+        private void Go_to_books(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ListPage), "books");
+        }
+
+        private void Go_to_sport(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ListPage), "sport");
+        }
+
+        private void Go_to_others(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ListPage), "others");
+        }
     }
 }

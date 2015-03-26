@@ -13,13 +13,13 @@ namespace nnfree
 {
     public partial class App : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
-        private global::nnfree.nnfree_Windows_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        private global::nnfree.nnfree_WindowsPhone_XamlTypeInfo.XamlTypeInfoProvider _provider;
 
         public global::Windows.UI.Xaml.Markup.IXamlType GetXamlType(global::System.Type type)
         {
             if(_provider == null)
             {
-                _provider = new global::nnfree.nnfree_Windows_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::nnfree.nnfree_WindowsPhone_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByType(type);
         }
@@ -28,7 +28,7 @@ namespace nnfree
         {
             if(_provider == null)
             {
-                _provider = new global::nnfree.nnfree_Windows_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::nnfree.nnfree_WindowsPhone_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByName(fullName);
         }
@@ -40,7 +40,7 @@ namespace nnfree
     }
 }
 
-namespace nnfree.nnfree_Windows_XamlTypeInfo
+namespace nnfree.nnfree_WindowsPhone_XamlTypeInfo
 {
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks", "4.0.0.0")]    
@@ -58,18 +58,6 @@ namespace nnfree.nnfree_Windows_XamlTypeInfo
             if(typeIndex != -1)
             {
                 xamlType = CreateXamlType(typeIndex);
-            }
-            var userXamlType = xamlType as global::nnfree.nnfree_Windows_XamlTypeInfo.XamlUserType;
-            if(xamlType == null || (userXamlType != null && userXamlType.IsReturnTypeStub && !userXamlType.IsLocalType))
-            {
-                global::Windows.UI.Xaml.Markup.IXamlType libXamlType = CheckOtherMetadataProvidersForType(type);
-                if (libXamlType != null)
-                {
-                    if(libXamlType.IsConstructible || xamlType == null)
-                    {
-                        xamlType = libXamlType;
-                    }
-                }
             }
             if (xamlType != null)
             {
@@ -94,18 +82,6 @@ namespace nnfree.nnfree_Windows_XamlTypeInfo
             if(typeIndex != -1)
             {
                 xamlType = CreateXamlType(typeIndex);
-            }
-            var userXamlType = xamlType as global::nnfree.nnfree_Windows_XamlTypeInfo.XamlUserType;
-            if(xamlType == null || (userXamlType != null && userXamlType.IsReturnTypeStub && !userXamlType.IsLocalType))
-            {
-                global::Windows.UI.Xaml.Markup.IXamlType libXamlType = CheckOtherMetadataProvidersForName(typeName);
-                if (libXamlType != null)
-                {
-                    if(libXamlType.IsConstructible || xamlType == null)
-                    {
-                        xamlType = libXamlType;
-                    }
-                }
             }
             if (xamlType != null)
             {
@@ -148,17 +124,15 @@ namespace nnfree.nnfree_Windows_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
-            _typeNameTable[0] = "nnfree.ListPage";
+            _typeNameTable = new string[3];
+            _typeNameTable[0] = "nnfree.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "nnfree.MainPage";
 
-            _typeTable = new global::System.Type[4];
-            _typeTable[0] = typeof(global::nnfree.ListPage);
+            _typeTable = new global::System.Type[3];
+            _typeTable[0] = typeof(global::nnfree.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::nnfree.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -193,102 +167,41 @@ namespace nnfree.nnfree_Windows_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_ListPage() { return new global::nnfree.ListPage(); }
-        private object Activate_3_MainPage() { return new global::nnfree.MainPage(); }
+        private object Activate_0_MainPage() { return new global::nnfree.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
-            global::nnfree.nnfree_Windows_XamlTypeInfo.XamlSystemBaseType xamlType = null;
-            global::nnfree.nnfree_Windows_XamlTypeInfo.XamlUserType userType;
+            global::nnfree.nnfree_WindowsPhone_XamlTypeInfo.XamlSystemBaseType xamlType = null;
+            global::nnfree.nnfree_WindowsPhone_XamlTypeInfo.XamlUserType userType;
             string typeName = _typeNameTable[typeIndex];
             global::System.Type type = _typeTable[typeIndex];
 
             switch (typeIndex)
             {
 
-            case 0:   //  nnfree.ListPage
-                userType = new global::nnfree.nnfree_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_ListPage;
+            case 0:   //  nnfree.MainPage
+                userType = new global::nnfree.nnfree_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_0_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
             case 1:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::nnfree.nnfree_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::nnfree.nnfree_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::nnfree.nnfree_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 3:   //  nnfree.MainPage
-                userType = new global::nnfree.nnfree_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_MainPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
+                xamlType = new global::nnfree.nnfree_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
             return xamlType;
         }
 
-        private global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider> _otherProviders;
-        private global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider> OtherProviders
-        {
-            get
-            {
-                if(_otherProviders == null)
-                {
-                    _otherProviders = new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider>();
-                    global::Windows.UI.Xaml.Markup.IXamlMetadataProvider provider;
-                    provider = new global::Microsoft.Advertising.WinRT.UI.XamlAdControl_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    _otherProviders.Add(provider); 
-                }
-                return _otherProviders;
-            }
-        }
-
-        private global::Windows.UI.Xaml.Markup.IXamlType CheckOtherMetadataProvidersForName(string typeName)
-        {
-            global::Windows.UI.Xaml.Markup.IXamlType xamlType = null;
-            global::Windows.UI.Xaml.Markup.IXamlType foundXamlType = null;
-            foreach(global::Windows.UI.Xaml.Markup.IXamlMetadataProvider xmp in OtherProviders)
-            {
-                xamlType = xmp.GetXamlType(typeName);
-                if(xamlType != null)
-                {
-                    if(xamlType.IsConstructible)    // not Constructible means it might be a Return Type Stub
-                    {
-                        return xamlType;
-                    }
-                    foundXamlType = xamlType;
-                }
-            }
-            return foundXamlType;
-        }
-
-        private global::Windows.UI.Xaml.Markup.IXamlType CheckOtherMetadataProvidersForType(global::System.Type type)
-        {
-            global::Windows.UI.Xaml.Markup.IXamlType xamlType = null;
-            global::Windows.UI.Xaml.Markup.IXamlType foundXamlType = null;
-            foreach(global::Windows.UI.Xaml.Markup.IXamlMetadataProvider xmp in OtherProviders)
-            {
-                xamlType = xmp.GetXamlType(type);
-                if(xamlType != null)
-                {
-                    if(xamlType.IsConstructible)    // not Constructible means it might be a Return Type Stub
-                    {
-                        return xamlType;
-                    }
-                    foundXamlType = xamlType;
-                }
-            }
-            return foundXamlType;
-        }
 
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
-            global::nnfree.nnfree_Windows_XamlTypeInfo.XamlMember xamlMember = null;
+            global::nnfree.nnfree_WindowsPhone_XamlTypeInfo.XamlMember xamlMember = null;
             // No Local Properties
             return xamlMember;
         }
@@ -345,9 +258,9 @@ namespace nnfree.nnfree_Windows_XamlTypeInfo
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks", "4.0.0.0")]    
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    internal class XamlUserType : global::nnfree.nnfree_Windows_XamlTypeInfo.XamlSystemBaseType
+    internal class XamlUserType : global::nnfree.nnfree_WindowsPhone_XamlTypeInfo.XamlSystemBaseType
     {
-        global::nnfree.nnfree_Windows_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::nnfree.nnfree_WindowsPhone_XamlTypeInfo.XamlTypeInfoProvider _provider;
         global::Windows.UI.Xaml.Markup.IXamlType _baseType;
         bool _isArray;
         bool _isMarkupExtension;
@@ -361,7 +274,7 @@ namespace nnfree.nnfree_Windows_XamlTypeInfo
         global::System.Collections.Generic.Dictionary<string, string> _memberNames;
         global::System.Collections.Generic.Dictionary<string, object> _enumValues;
 
-        public XamlUserType(global::nnfree.nnfree_Windows_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
+        public XamlUserType(global::nnfree.nnfree_WindowsPhone_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
             :base(fullName, fullType)
         {
             _provider = provider;
@@ -554,7 +467,7 @@ namespace nnfree.nnfree_Windows_XamlTypeInfo
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlMember : global::Windows.UI.Xaml.Markup.IXamlMember
     {
-        global::nnfree.nnfree_Windows_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::nnfree.nnfree_WindowsPhone_XamlTypeInfo.XamlTypeInfoProvider _provider;
         string _name;
         bool _isAttachable;
         bool _isDependencyProperty;
@@ -563,7 +476,7 @@ namespace nnfree.nnfree_Windows_XamlTypeInfo
         string _typeName;
         string _targetTypeName;
 
-        public XamlMember(global::nnfree.nnfree_Windows_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
+        public XamlMember(global::nnfree.nnfree_WindowsPhone_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
         {
             _name = name;
             _typeName = typeName;

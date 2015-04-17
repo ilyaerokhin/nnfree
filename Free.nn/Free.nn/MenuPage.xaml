@@ -1,0 +1,33 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Free.nn.MenuPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True" BackKeyPress="PhoneApplicationPage_BackKeyPress">
+
+    <!--LayoutRoot представляет корневую сетку, где размещается все содержимое страницы-->
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid x:Name="Top" HorizontalAlignment="Left" Height="67" VerticalAlignment="Top" Width="480" Background="#F34725">
+            <TextBlock x:Name="NAME" TextWrapping="Wrap" Margin="10,8,10,12" FontFamily="Segoe WP SemiLight" FontSize="36" Text="МЕНЮ" TextAlignment="Center"/>
+            <Image Source="/Assets/Logo.scale-240.png" Margin="10,0,400,1" Stretch="UniformToFill"/>
+        </Grid>
+
+        <!--ContentPanel – поместите здесь дополнительное содержимое-->
+        <Grid x:Name="ContentPanel" Margin="12,67,12,0"/>
+    </Grid>
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" BackgroundColor="#F34725">
+            <shell:ApplicationBarIconButton IconUri="/Images/Erase.png" Text="logout" Click="Logout"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

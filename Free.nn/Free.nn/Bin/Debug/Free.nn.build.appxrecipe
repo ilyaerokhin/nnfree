@@ -1,73 +1,73 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>ILYA</Machine>
-    <WindowsUser>Илья</WindowsUser>
+    <Machine>HOME-1</Machine>
+    <WindowsUser>user</WindowsUser>
     <TargetPlatformIdentifier>Windows Phone</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>85073cc6-829f-4b4d-a5e2-b1fc6b37014f</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Илья\Documents\Visual Studio 2013\Projects\Free.nn\Free.nn\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Илья\Documents\Visual Studio 2013\Projects\Free.nn\Free.nn\Bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Илья\Documents\Visual Studio 2013\Projects\Free.nn\Free.nn\Bin\Debug\Free.nn.dll">
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Bin\Debug\Free.nn.dll">
       <PackagePath>Free.nn.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Илья\Documents\Visual Studio 2013\Projects\Free.nn\Free.nn\Assets\AlignmentGrid.png">
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\AlignmentGrid.png">
       <PackagePath>Assets\AlignmentGrid.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Илья\Documents\Visual Studio 2013\Projects\Free.nn\Free.nn\Assets\ApplicationIcon.png">
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\ApplicationIcon.png">
       <PackagePath>Assets\ApplicationIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Илья\Documents\Visual Studio 2013\Projects\Free.nn\Free.nn\Assets\BadgeLogo.png">
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\BadgeLogo.png">
       <PackagePath>Assets\BadgeLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Илья\Documents\Visual Studio 2013\Projects\Free.nn\Free.nn\Assets\Logo.png">
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Илья\Documents\Visual Studio 2013\Projects\Free.nn\Free.nn\Assets\Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Илья\Documents\Visual Studio 2013\Projects\Free.nn\Free.nn\Assets\SmallLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Илья\Documents\Visual Studio 2013\Projects\Free.nn\Free.nn\Assets\SplashScreen.png">
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Илья\Documents\Visual Studio 2013\Projects\Free.nn\Free.nn\Assets\Square71x71Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\Square71x71Logo.scale-240.png">
       <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Илья\Documents\Visual Studio 2013\Projects\Free.nn\Free.nn\Assets\SquareTile150x150.png">
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\SquareTile150x150.png">
       <PackagePath>Assets\SquareTile150x150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Илья\Documents\Visual Studio 2013\Projects\Free.nn\Free.nn\Assets\SquareTile71x71.png">
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\SquareTile71x71.png">
       <PackagePath>Assets\SquareTile71x71.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Илья\Documents\Visual Studio 2013\Projects\Free.nn\Free.nn\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Илья\Documents\Visual Studio 2013\Projects\Free.nn\Free.nn\Assets\WideLogo.png">
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\WideLogo.png">
       <PackagePath>Assets\WideLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Илья\Documents\Visual Studio 2013\Projects\Free.nn\Free.nn\Assets\WideLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Илья\Documents\Visual Studio 2013\Projects\Free.nn\Free.nn\Images\Erase.png">
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Images\Erase.png">
       <PackagePath>Images\Erase.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Илья\Documents\Visual Studio 2013\Projects\Free.nn\Free.nn\Bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

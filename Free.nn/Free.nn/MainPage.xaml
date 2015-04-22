@@ -11,15 +11,16 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
-    shell:SystemTray.IsVisible="True">
+    shell:SystemTray.IsVisible="True" BackKeyPress="PhoneApplicationPage_BackKeyPress">
 
     <!--LayoutRoot представляет корневую сетку, где размещается все содержимое страницы-->
-    <Grid x:Name="LayoutRoot" Background="White">
-        <Grid x:Name="Top" HorizontalAlignment="Left" Height="67" VerticalAlignment="Top" Width="480" Background="#F34725">
-            <TextBlock x:Name="NAME" TextWrapping="Wrap" Margin="10,8,10,12" FontFamily="Segoe WP SemiLight" FontSize="36" Text="ВХОД" TextAlignment="Center" Visibility="Collapsed"/>
+    <Grid x:Name="LayoutRoot" Background="#F34725">
+        <Grid x:Name="Top" HorizontalAlignment="Left" Height="67" VerticalAlignment="Top" Width="480" Background="#F34725" Visibility="Collapsed">
+            <TextBlock x:Name="NAME" TextWrapping="Wrap" Margin="10,8,10,12" FontFamily="Segoe WP SemiLight" FontSize="36" Text="ВХОД" TextAlignment="Center"/>
             <Image Source="/Assets/Logo.scale-240.png" Margin="10,0,400,1" Stretch="UniformToFill"/>
         </Grid>
-        <phone:WebBrowser x:Name="browser" IsScriptEnabled="True" LoadCompleted="OnLoadCompleted" HorizontalAlignment="Left" VerticalAlignment="Top" Height="701" Width="480" Margin="0,67,0,0"/>
+        <phone:WebBrowser x:Name="browser" IsScriptEnabled="True" LoadCompleted="OnLoadCompleted" HorizontalAlignment="Left" VerticalAlignment="Top" Height="701" Width="480" Margin="0,67,0,0" Visibility="Collapsed"/>
+        <Image x:Name="icon" HorizontalAlignment="Center" Height="360" VerticalAlignment="Center"  Source="/Assets/Logo.scale-240.png" Stretch="None" Margin="60,204"/>
     </Grid>
 
 </phone:PhoneApplicationPage>

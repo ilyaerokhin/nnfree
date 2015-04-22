@@ -13,5 +13,7 @@ namespace Free.nn
         public static string first_name;
         public static int sex;
         public static string photo_path;
+        public const string host = "109.120.164.212";
+        public const int port = 6000;
     }
 }

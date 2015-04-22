@@ -22,11 +22,11 @@ namespace Free.nn
 
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
         {
-            MessageBox.Show("Имя  - "+PublicData.first_name+
-                            "\nID   - "+PublicData.id+
-                            "\nПол  - "+PublicData.sex.ToString()+
-                            "\nФото - "+PublicData.photo_path+
-                            "\nToken- "+PublicData.accessToken);
+            //MessageBox.Show("Имя  - "+PublicData.first_name+
+            //                "\nID   - "+PublicData.id+
+            //                "\nПол  - "+PublicData.sex.ToString()+
+            //                "\nФото - "+PublicData.photo_path+
+            //                "\nToken- "+PublicData.accessToken);
             // ОТПРАВКА НА СТЕНУ
             //string uri = "https://api.vkontakte.ru/method/wall.post.xml?owner_id="+PublicData.id+"&message=" + "Привет" + "&access_token=" + PublicData.accessToken;
 
@@ -50,13 +50,11 @@ namespace Free.nn
         private void wallPost_OpenReadCompleted(object sender, OpenReadCompletedEventArgs e)
         {
             XDocument xml = XDocument.Load(e.Result);
-            MessageBox.Show(xml.Root.Document.ToString());
+            //MessageBox.Show(xml.Root.Document.ToString());
         }
 
         private void PhoneApplicationPage_BackKeyPress(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            e.Cancel = true;
-            Task.Delay(100);
             if (MessageBox.Show("Вы хотите покинуть приложение?", "Выход", MessageBoxButton.OKCancel) == MessageBoxResult.OK)
             {
                 IsolatedStorageSettings.ApplicationSettings.Save();
@@ -67,7 +65,7 @@ namespace Free.nn
         private void Logout(object sender, EventArgs e)
         {
             new WebBrowser().ClearCookiesAsync();
-            NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/MainPage.xaml?" + DateTime.Now.Ticks, UriKind.Relative));
         }
     }
 }

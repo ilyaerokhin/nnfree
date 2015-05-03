@@ -15,13 +15,26 @@
 
     <!--LayoutRoot представляет корневую сетку, где размещается все содержимое страницы-->
     <Grid x:Name="LayoutRoot" Background="White">
-        <Grid x:Name="Top" HorizontalAlignment="Left" Height="67" VerticalAlignment="Top" Width="480" Background="#F34725">
-            <TextBlock x:Name="NAME" TextWrapping="Wrap" Margin="10,8,10,12" FontFamily="Segoe WP SemiLight" FontSize="36" Text="МЕНЮ" TextAlignment="Center"/>
-            <Image Source="/Assets/Logo.scale-240.png" Margin="10,0,400,1" Stretch="UniformToFill"/>
-        </Grid>
+        <StackPanel>
+            <Grid x:Name="Top" HorizontalAlignment="Left" Height="67" VerticalAlignment="Top" Width="480" Background="#F34725">
+                <TextBlock x:Name="NAME" TextWrapping="Wrap" Margin="10,8,10,12" FontFamily="Segoe WP SemiLight" FontSize="36" Text="МЕНЮ" TextAlignment="Center"/>
+                <Image Source="/Assets/Logo.scale-240.png" Margin="10,0,400,1" Stretch="UniformToFill"/>
+            </Grid>
 
-        <!--ContentPanel – поместите здесь дополнительное содержимое-->
-        <Grid x:Name="ContentPanel" Margin="12,67,12,0"/>
+            <ListBox x:Name="list_ads" Margin="0,60,0,0"  ItemsSource="{Binding}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel x:Name="Ads_panel" Orientation="Horizontal" Margin="0,0,0,17">
+                            <Image Height="100" Width="100" Source="{Binding ImagePath}" Margin="12,0,9,0"/>
+                            <StackPanel x:Name="Child"  Width="311" >
+                                <TextBlock x:Name="low_text" Text="{Binding low_text}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontFamily="Segoe WP" FontSize="35" Foreground="Black" />
+                                <TextBlock x:Name="advert_id" Text="{Binding advert_id}" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}" Foreground="Black" Visibility="Collapsed" />
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
     </Grid>
 
     <phone:PhoneApplicationPage.ApplicationBar>

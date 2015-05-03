@@ -8,10 +8,12 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
-    Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
     mc:Ignorable="d"
     shell:SystemTray.IsVisible="True" BackKeyPress="PhoneApplicationPage_BackKeyPress">
+    <phone:PhoneApplicationPage.Foreground>
+        <SolidColorBrush Color="{StaticResource PhoneForegroundColor}"/>
+    </phone:PhoneApplicationPage.Foreground>
 
     <!--LayoutRoot представляет корневую сетку, где размещается все содержимое страницы-->
     <Grid x:Name="LayoutRoot" Background="White">
@@ -21,16 +23,18 @@
                 <Image Source="/Assets/Logo.scale-240.png" Margin="10,0,400,1" Stretch="UniformToFill"/>
             </Grid>
 
-            <ListBox x:Name="list_ads" Margin="0,60,0,0"  ItemsSource="{Binding}">
+            <ListBox x:Name="list_ads" Margin="0,0,0,0"  ItemsSource="{Binding Items}" Height="683" >
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel x:Name="Ads_panel" Orientation="Horizontal" Margin="0,0,0,17">
-                            <Image Height="100" Width="100" Source="{Binding ImagePath}" Margin="12,0,9,0"/>
-                            <StackPanel x:Name="Child"  Width="311" >
-                                <TextBlock x:Name="low_text" Text="{Binding low_text}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontFamily="Segoe WP" FontSize="35" Foreground="Black" />
-                                <TextBlock x:Name="advert_id" Text="{Binding advert_id}" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}" Foreground="Black" Visibility="Collapsed" />
+                        <ScrollViewer x:Name="scrollViewer">
+                            <StackPanel x:Name="Ads_panel" Orientation="Horizontal" Margin="0,0,0,10">
+                                <Image Height="100" Width="100" Source="{Binding ImagePath}" />
+                                <StackPanel x:Name="Child">
+                                    <TextBlock x:Name="low_text" Text="{Binding low_text}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontFamily="Segoe WP" FontSize="35" Foreground="Black" />
+                                    <TextBlock x:Name="advert_id" Text="{Binding advert_id}" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}" Foreground="Black" Visibility="Collapsed" />
+                                </StackPanel>
                             </StackPanel>
-                        </StackPanel>
+                        </ScrollViewer>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>

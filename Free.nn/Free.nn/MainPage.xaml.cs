@@ -89,6 +89,7 @@ namespace Free.nn
                 int a = free.CheckUser(PublicData.id);
                 if (a == 0)
                 {
+                    //MessageBox.Show(a.ToString());
                     free.Close();
                     NavigationService.Navigate(new Uri("/MenuPage.xaml", UriKind.Relative));
                 }

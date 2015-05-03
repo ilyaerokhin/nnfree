@@ -10,21 +10,133 @@ using Microsoft.Phone.Shell;
 using System.IO.IsolatedStorage;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using System.Windows.Controls.Primitives;
+using System.Windows.Media;
+using System.Windows.Data;
 
 namespace Free.nn
 {
     public partial class MenuPage : PhoneApplicationPage
     {
+        static NNFreeAPI free;
+        static int advert_id;
+        ScrollViewer scrollViewer;
+        public readonly DependencyProperty ListVerticalOffsetProperty = DependencyProperty.Register("ListVerticalOffset",
+typeof(double), typeof(MenuPage), new PropertyMetadata(new PropertyChangedCallback(OnListVerticalOffsetChanged)));
+
+        private static void OnListVerticalOffsetChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            MenuPage page = d as MenuPage;
+            ScrollViewer viewer = page.scrollViewer;
+            //Checks if the Scroll has reached the last item based on the ScrollableHeight 
+            bool atBottom = viewer.VerticalOffset >= viewer.ScrollableHeight;
+            if (atBottom)
+            {
+                if(advert_id-30<0)
+                {
+                    return;
+                }
+                advert_id=advert_id-30;
+                string value = free.ListAds(advert_id.ToString());
+                string[] ads = value.Split(new Char[] { '/' });
+
+                //MessageBox.Show(value);
+                int i = advert_id;
+                foreach (string s in ads)
+                {
+                    // если строка не пустая
+                    if (s.Trim() != "")
+                    {
+                        //ListAds.Add(new Adverts() { low_text = s, advert_id = i.ToString(), ImagePath = "http://109.120.164.212/photos/ilya.jpg" + "?" + Guid.NewGuid().ToString() });
+                        page.list_ads.Items.Add(new Adverts() { low_text = s, advert_id = i.ToString(), ImagePath = "http://109.120.164.212/photos/ilya.jpg" + "?" + Guid.NewGuid().ToString() });
+                        //page.list_ads.DataContext = ListAds;
+                        i--;
+                    }
+                }
+                //page.list_ads.DataContext = ListAds;
+            }
+        }
+
+        public double ListVerticalOffset
+        {
+            get { return (double)this.GetValue(ListVerticalOffsetProperty); }
+            set { this.SetValue(ListVerticalOffsetProperty, value); }
+        }
+
         public MenuPage()
         {
             InitializeComponent();
+            list_ads.Loaded += new RoutedEventHandler(list_ads_Loaded); 
+        }
+
+        private void list_ads_Loaded(object sender, RoutedEventArgs e)
+        {
+            FrameworkElement element = (FrameworkElement)sender;
+            element.Loaded -= list_ads_Loaded;
+            scrollViewer = FindChildOfType<ScrollViewer>(element);
+            if (scrollViewer == null)
+            {
+                throw new InvalidOperationException("ScrollViewer not found.");
+            }
+
+            Binding binding = new Binding();
+            binding.Source = scrollViewer;
+            binding.Path = new PropertyPath("VerticalOffset");
+            binding.Mode = BindingMode.OneWay;
+            this.SetBinding(ListVerticalOffsetProperty, binding);
+        }
+
+        static T FindChildOfType<T>(DependencyObject root) where T : class
+        {
+            var queue = new Queue<DependencyObject>();
+            queue.Enqueue(root);
+
+            while (queue.Count > 0)
+            {
+                DependencyObject current = queue.Dequeue();
+                for (int i = VisualTreeHelper.GetChildrenCount(current) - 1; 0 <= i; i--)
+                {
+                    var child = VisualTreeHelper.GetChild(current, i);
+                    var typedChild = child as T;
+                    if (typedChild != null)
+                    {
+                        return typedChild;
+                    }
+                    queue.Enqueue(child);
+                }
+            }
+            return null;
         }
 
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
         {
-            
-        }
+            free = new NNFreeAPI(PublicData.host, PublicData.port);
 
+            if (free.Connect() == 1)
+            {
+                MessageBox.Show("Мы не можем подключиться к серверу\nВозможно отсутствует подключение к интернету");
+                IsolatedStorageSettings.ApplicationSettings.Save();
+                Application.Current.Terminate();
+            }
+            else
+            {
+
+                advert_id = free.NumberOfAds();
+                string value = free.ListAds(advert_id.ToString());
+                string[] ads = value.Split(new Char[] { '/' });
+
+                int i = advert_id;
+                foreach (string s in ads)
+                {
+                    // если строка не пустая
+                    if (s.Trim() != "")
+                    {
+                        list_ads.Items.Add(new Adverts() { low_text = s, advert_id = i.ToString(), ImagePath = "http://109.120.164.212/photos/ilya.jpg" + "?" + Guid.NewGuid().ToString() });
+                        i--;
+                    }
+                }
+            }
+        }
 
         private void PhoneApplicationPage_BackKeyPress(object sender, System.ComponentModel.CancelEventArgs e)
         {
@@ -39,6 +151,20 @@ namespace Free.nn
         {
             new WebBrowser().ClearCookiesAsync();
             NavigationService.Navigate(new Uri("/MainPage.xaml?" + DateTime.Now.Ticks, UriKind.Relative));
+        }
+
+        private void list_ads_Scroll(object sender, ScrollEventArgs e)
+        {
+            ScrollBar sb = e.OriginalSource as ScrollBar;
+
+            MessageBox.Show(sb.Value.ToString());
+            if (sb.Value == sb.Maximum)
+            {
+
+                MessageBox.Show("here");
+
+            }
+
         }
     }
 }

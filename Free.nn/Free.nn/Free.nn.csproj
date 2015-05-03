@@ -91,6 +91,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Adverts.cs" />
     <Compile Include="AgreementPage.xaml.cs">
       <DependentUpon>AgreementPage.xaml</DependentUpon>
     </Compile>

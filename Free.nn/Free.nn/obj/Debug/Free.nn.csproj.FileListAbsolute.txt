@@ -60,3 +60,35 @@ C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.n
 C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\obj\Debug\MDILProjectFiles.xml
 C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\obj\Debug\XapCacheFile.xml
 C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\obj\Debug\AgreementPage.g.cs
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Bin\Debug\Free.nn.dll
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Bin\Debug\Free.nn.pdb
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Bin\Debug\resources.pri
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Bin\Debug\AppxManifest.xml
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Bin\Debug\Free.nn.build.appxrecipe
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Bin\Debug\AppManifest.xaml
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Bin\Debug\Free.nn_Debug_AnyCPU.xap
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\App.g.cs
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\AgreementPage.g.cs
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\MainPage.g.cs
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\MenuPage.g.cs
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\NavigationPage.g.cs
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\Free.nn.g.resources
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\Free.nn.Resources.AppResources.resources
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\Free.nn.csproj.GenerateResource.Cache
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\Free.nn.dll
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\Free.nn.pdb
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\priconfig.xml
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\priconfig.xml.intermediate
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\layout.resfiles
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\layout.resfiles.intermediate
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\resources.resfiles
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\resources.resfiles.intermediate
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\pri.resfiles
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\pri.resfiles.intermediate
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\qualifiers.txt
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\ProjectArchitectures.txt
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\MDILProjectFiles.xml
+C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\XapCacheFile.xml

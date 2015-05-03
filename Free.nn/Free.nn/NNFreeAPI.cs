@@ -13,8 +13,6 @@ namespace Free.nn
         private string HOST = null;
         private string result = null;
         private bool IsConnected = false;
-        private string p1;
-        private int p2;
 
         // конструктор
         public NNFreeAPI(string host,int port)

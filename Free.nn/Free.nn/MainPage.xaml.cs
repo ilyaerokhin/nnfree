@@ -49,7 +49,7 @@ namespace Free.nn
                 PublicData.accessToken = parameters[0].Substring(parameters[0].IndexOf("=", StringComparison.Ordinal)).Remove(0, 1);
                 PublicData.id = parameters[2].Remove(0, 8);
 
-                string uri = "https://api.vkontakte.ru/method/getProfiles.xml?uids=" + PublicData.id + "&fields=first_name,sex,photo_100&access_token=" + PublicData.accessToken;
+                string uri = "https://api.vkontakte.ru/method/getProfiles.xml?uids=" + PublicData.id + "&fields=first_name,sex,last_name,photo_100&access_token=" + PublicData.accessToken;
 
                 WebClient webClient = new WebClient();
                 webClient.OpenReadCompleted += getProfiles_OpenReadCompleted;
@@ -69,6 +69,7 @@ namespace Free.nn
             XDocument xml = XDocument.Load(e.Result);
             XElement element = xml.Root.Element("user");
             PublicData.first_name = string.Format(element.Element("first_name").Value);
+            PublicData.last_name = string.Format(element.Element("last_name").Value);
             PublicData.sex = int.Parse(element.Element("sex").Value);
             PublicData.photo_path = string.Format(element.Element("photo_100").Value);
 
@@ -86,7 +87,7 @@ namespace Free.nn
 
             if (xml.Root.ToString().Contains("<error_code>104</error_code>"))
             {
-                int a = free.CheckUser(PublicData.id);
+                int a = free.CheckUser(PublicData.id, PublicData.first_name + " " + PublicData.last_name);
                 if (a == 0)
                 {
                     //MessageBox.Show(a.ToString());

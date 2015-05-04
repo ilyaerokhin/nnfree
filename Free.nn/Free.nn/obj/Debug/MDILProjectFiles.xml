@@ -15,8 +15,18 @@
     <File>Assets\StoreLogo.png</File>
     <File>Assets\WideLogo.png</File>
     <File>Assets\WideLogo.scale-240.png</File>
+    <File>Images\Add.png</File>
     <File>Images\Erase.png</File>
+    <File>Images\fon.jpg</File>
+    <File>Images\nophoto.png</File>
+    <File>README_FIRST.txt</File>
+    <File>Toolkit.Content\ApplicationBar.Add.png</File>
+    <File>Toolkit.Content\ApplicationBar.Cancel.png</File>
+    <File>Toolkit.Content\ApplicationBar.Check.png</File>
+    <File>Toolkit.Content\ApplicationBar.Delete.png</File>
+    <File>Toolkit.Content\ApplicationBar.Select.png</File>
     <File>AppManifest.xaml</File>
+    <File>Microsoft.Phone.Controls.Toolkit.dll</File>
     <File>Assets\Square71x71Logo.scale-240.png</File>
     <File>WMAppManifest.xml</File>
     <File>AppxManifest.xml</File>

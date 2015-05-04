@@ -29,31 +29,32 @@ typeof(double), typeof(MenuPage), new PropertyMetadata(new PropertyChangedCallba
             MenuPage page = d as MenuPage;
             ScrollViewer viewer = page.scrollViewer;
             //Checks if the Scroll has reached the last item based on the ScrollableHeight 
-            bool atBottom = viewer.VerticalOffset >= viewer.ScrollableHeight;
+            bool atBottom = viewer.VerticalOffset >= viewer.ScrollableHeight/30;
             if (atBottom)
             {
-                if(advert_id-30<0)
+                //MessageBox.Show("here");
+                if(advert_id<0)
                 {
                     return;
                 }
-                advert_id=advert_id-30;
+
                 string value = free.ListAds(advert_id.ToString());
                 string[] ads = value.Split(new Char[] { '/' });
+                int n = 0;
 
                 //MessageBox.Show(value);
-                int i = advert_id;
                 foreach (string s in ads)
                 {
                     // если строка не пустая
                     if (s.Trim() != "")
                     {
-                        //ListAds.Add(new Adverts() { low_text = s, advert_id = i.ToString(), ImagePath = "http://109.120.164.212/photos/ilya.jpg" + "?" + Guid.NewGuid().ToString() });
-                        page.list_ads.Items.Add(new Adverts() { low_text = s, advert_id = i.ToString(), ImagePath = "http://109.120.164.212/photos/ilya.jpg" + "?" + Guid.NewGuid().ToString() });
-                        //page.list_ads.DataContext = ListAds;
-                        i--;
+                        string[] text = s.Split(new Char[] { '|' });
+                        string[] big_text = free.GetAdvert(text[0]).Split(new Char[] { '/' });
+                        page.list_ads.Items.Add(new Adverts() { low_text = text[1], name = big_text[3], big_text = big_text[2], advert_id = "# " + text[0], ImagePath = "http://109.120.164.212/photos/" + text[0] + ".jpg" + "?" + Guid.NewGuid().ToString() });
+                        n = Int32.Parse(text[0]);  
                     }
                 }
-                //page.list_ads.DataContext = ListAds;
+                advert_id = n - 1;
             }
         }
 
@@ -124,17 +125,20 @@ typeof(double), typeof(MenuPage), new PropertyMetadata(new PropertyChangedCallba
                 advert_id = free.NumberOfAds();
                 string value = free.ListAds(advert_id.ToString());
                 string[] ads = value.Split(new Char[] { '/' });
+                int n = 0;
 
-                int i = advert_id;
                 foreach (string s in ads)
                 {
                     // если строка не пустая
                     if (s.Trim() != "")
                     {
-                        list_ads.Items.Add(new Adverts() { low_text = s, advert_id = i.ToString(), ImagePath = "http://109.120.164.212/photos/ilya.jpg" + "?" + Guid.NewGuid().ToString() });
-                        i--;
+                        string[] text = s.Split(new Char[] { '|' });
+                        string[] big_text = free.GetAdvert(text[0]).Split(new Char[] { '/' });
+                        list_ads.Items.Add(new Adverts() { low_text = text[1],name = big_text[3], big_text = big_text[2], advert_id = "# " + text[0], ImagePath = "http://109.120.164.212/photos/" + text[0] + ".jpg" + "?" + Guid.NewGuid().ToString() });
+                        n = Int32.Parse(text[0]);                    
                     }
                 }
+                advert_id = n - 1;
             }
         }
 
@@ -165,6 +169,11 @@ typeof(double), typeof(MenuPage), new PropertyMetadata(new PropertyChangedCallba
 
             }
 
+        }
+
+        private void Add(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/AddPage.xaml", UriKind.Relative));
         }
     }
 }

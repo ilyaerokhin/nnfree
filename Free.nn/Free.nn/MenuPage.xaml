@@ -6,6 +6,7 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     SupportedOrientations="Portrait" Orientation="Portrait"
@@ -18,23 +19,32 @@
     <!--LayoutRoot представляет корневую сетку, где размещается все содержимое страницы-->
     <Grid x:Name="LayoutRoot" Background="White">
         <StackPanel>
-            <Grid x:Name="Top" HorizontalAlignment="Left" Height="67" VerticalAlignment="Top" Width="480" Background="#F34725">
-                <TextBlock x:Name="NAME" TextWrapping="Wrap" Margin="10,8,10,12" FontFamily="Segoe WP SemiLight" FontSize="36" Text="МЕНЮ" TextAlignment="Center"/>
+            <StackPanel.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="/Images/fon.jpg" Opacity="0.2"/>
+            </StackPanel.Background>
+            <Grid x:Name="Top" HorizontalAlignment="Left" Height="67" VerticalAlignment="Top" Width="480" Background="#F34725" >
+                <TextBlock x:Name="NAME" TextWrapping="Wrap" Margin="10,8,10,12" FontFamily="Segoe WP SemiLight" FontSize="36" Text="ОБЪЯВЛЕНИЯ" TextAlignment="Center"/>
                 <Image Source="/Assets/Logo.scale-240.png" Margin="10,0,400,1" Stretch="UniformToFill"/>
             </Grid>
 
-            <ListBox x:Name="list_ads" Margin="0,0,0,0"  ItemsSource="{Binding Items}" Height="683" >
+            <ListBox x:Name="list_ads" Margin="0,0,0,0"  ItemsSource="{Binding Items}" VerticalAlignment="Bottom" Height="681">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <ScrollViewer x:Name="scrollViewer">
-                            <StackPanel x:Name="Ads_panel" Orientation="Horizontal" Margin="0,0,0,10">
-                                <Image Height="100" Width="100" Source="{Binding ImagePath}" />
-                                <StackPanel x:Name="Child">
-                                    <TextBlock x:Name="low_text" Text="{Binding low_text}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontFamily="Segoe WP" FontSize="35" Foreground="Black" />
-                                    <TextBlock x:Name="advert_id" Text="{Binding advert_id}" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}" Foreground="Black" Visibility="Collapsed" />
-                                </StackPanel>
+                        <StackPanel x:Name="Ads_panel" Orientation="Vertical" Margin="0,10,0,10">
+                            <TextBlock x:Name="low_text" Text="{Binding low_text}" Margin="10,10,10,10" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontFamily="Comic Sans MS" FontSize="35" Foreground="Black" />
+                            <TextBlock x:Name="big_text" Text="{Binding big_text}" Margin="10,10,10,10" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontFamily="Comic Sans MS" FontSize="25" Foreground="Black" />
+                            <Image Width="Auto" Source="{Binding ImagePath}" Margin="10,10,10,10" MinWidth="0" MaxWidth="460" MaxHeight="460" />
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock x:Name="name" Text="{Binding name}" Margin="10,0,10,10" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontFamily="Comic Sans MS" FontSize="20" Foreground="Black" HorizontalAlignment="Right" />
+                                <TextBlock x:Name="advert_id" Text="{Binding advert_id}" Margin="10,0,10,10" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontFamily="Comic Sans MS" FontSize="20" Foreground="Black" HorizontalAlignment="Right" />
                             </StackPanel>
-                        </ScrollViewer>
+                            <toolkit:ContextMenuService.ContextMenu  >
+                                <toolkit:ContextMenu>
+                                    <toolkit:MenuItem x:Name="Follow" Header="Ответить"/>
+                                    <toolkit:MenuItem x:Name="Delete" Header="Пожаловаться"/>
+                                </toolkit:ContextMenu>
+                            </toolkit:ContextMenuService.ContextMenu>
+                        </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
@@ -43,7 +53,8 @@
 
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" BackgroundColor="#F34725">
-            <shell:ApplicationBarIconButton IconUri="/Images/Erase.png" Text="logout" Click="Logout"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/Erase.png" Text="Выйти" Click="Logout"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/Add.png" Text="Добавить" Click="Add"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 

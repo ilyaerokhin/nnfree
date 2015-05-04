@@ -11,6 +11,7 @@ namespace Free.nn
         public static string accessToken;
         public static string id;
         public static string first_name;
+        public static string last_name;
         public static int sex;
         public static string photo_path;
         public const string host = "109.120.164.212";

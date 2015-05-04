@@ -65,11 +65,11 @@ namespace Free.nn
             }
         }
         // проверка пользователя
-        public int CheckUser(string id)
+        public int CheckUser(string id, string name)
         {
             if (this.IsConnected)
             {
-                this.client.Send("<check_user/" + id + ">");
+                this.client.Send("<check_user/" + id + "/" + name + ">");
                 this.result = this.client.Receive();
 
                 if (this.result.Contains("<old_user>"))
@@ -142,7 +142,9 @@ namespace Free.nn
                                + "/"
                                + this.result.Split(new Char[] { '/', '>' })[2] // low_text
                                + "/"
-                               + this.result.Split(new Char[] { '/', '>' })[3]; // big_text
+                               + this.result.Split(new Char[] { '/', '>' })[3] // big_text
+                               +"/"
+                               + this.result.Split(new Char[] { '/', '>' })[4]; // name
                     }
                 }
                 else

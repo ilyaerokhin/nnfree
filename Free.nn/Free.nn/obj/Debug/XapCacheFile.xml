@@ -1,6 +1,6 @@
-﻿<xapCache source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Bin\Debug\Free.nn_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="03.05.2015 13:43:33">
-  <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="03.05.2015 10:54:06" />
-  <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\Free.nn.dll" archivePath="Free.nn.dll" lastWriteTime="03.05.2015 13:43:32" />
+﻿<xapCache source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Bin\Debug\Free.nn_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="04.05.2015 19:36:45">
+  <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="04.05.2015 19:36:43" />
+  <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\Free.nn.dll" archivePath="Free.nn.dll" lastWriteTime="04.05.2015 19:36:43" />
   <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="08.11.2014 5:13:24" />
   <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="08.11.2014 5:13:24" />
   <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="08.11.2014 5:13:24" />
@@ -13,10 +13,20 @@
   <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Assets\StoreLogo.png" archivePath="Assets\StoreLogo.png" lastWriteTime="08.11.2014 5:13:24" />
   <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Assets\WideLogo.png" archivePath="Assets\WideLogo.png" lastWriteTime="08.11.2014 5:13:24" />
   <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Assets\WideLogo.scale-240.png" archivePath="Assets\WideLogo.scale-240.png" lastWriteTime="27.02.2015 10:55:47" />
+  <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Images\Add.png" archivePath="Images\Add.png" lastWriteTime="24.03.2015 21:02:46" />
   <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Images\Erase.png" archivePath="Images\Erase.png" lastWriteTime="04.02.2015 19:42:18" />
-  <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="12.04.2015 18:30:42" />
+  <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Images\fon.jpg" archivePath="Images\fon.jpg" lastWriteTime="04.05.2015 13:58:07" />
+  <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Images\nophoto.png" archivePath="Images\nophoto.png" lastWriteTime="04.05.2015 18:33:15" />
+  <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\README_FIRST.txt" archivePath="README_FIRST.txt" lastWriteTime="04.05.2015 14:44:30" />
+  <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Toolkit.Content\ApplicationBar.Add.png" archivePath="Toolkit.Content\ApplicationBar.Add.png" lastWriteTime="04.05.2015 14:44:30" />
+  <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="04.05.2015 14:44:30" />
+  <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="04.05.2015 14:44:30" />
+  <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Toolkit.Content\ApplicationBar.Delete.png" archivePath="Toolkit.Content\ApplicationBar.Delete.png" lastWriteTime="04.05.2015 14:44:30" />
+  <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Toolkit.Content\ApplicationBar.Select.png" archivePath="Toolkit.Content\ApplicationBar.Select.png" lastWriteTime="04.05.2015 14:44:30" />
+  <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="04.05.2015 14:50:10" />
+  <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="04.05.2015 14:44:29" />
   <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Assets\Square71x71Logo.scale-240.png" archivePath="Assets\Square71x71Logo.scale-240.png" lastWriteTime="27.02.2015 10:55:47" />
   <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="03.05.2015 10:22:55" />
-  <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="03.05.2015 13:43:33" />
-  <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="03.05.2015 10:54:06" />
+  <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="04.05.2015 19:36:45" />
+  <file source="C:\Users\Илья\Documents\GitHub\nnfree\Free.nn\Free.nn\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="04.05.2015 19:36:44" />
 </xapCache>

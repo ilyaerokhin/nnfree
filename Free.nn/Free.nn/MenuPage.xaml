@@ -30,18 +30,19 @@
             <ListBox x:Name="list_ads" Margin="0,0,0,0"  ItemsSource="{Binding Items}" VerticalAlignment="Bottom" Height="681">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel x:Name="Ads_panel" Orientation="Vertical" Margin="0,10,0,10">
+                        <StackPanel x:Name="Ads_panel" Orientation="Vertical" Margin="0,10,0,10" Hold="Profile_panel_Hold">
                             <TextBlock x:Name="low_text" Text="{Binding low_text}" Margin="10,10,10,10" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontFamily="Comic Sans MS" FontSize="35" Foreground="Black" />
                             <TextBlock x:Name="big_text" Text="{Binding big_text}" Margin="10,10,10,10" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontFamily="Comic Sans MS" FontSize="25" Foreground="Black" />
                             <Image Width="Auto" Source="{Binding ImagePath}" Margin="10,10,10,10" MinWidth="0" MaxWidth="460" MaxHeight="460" />
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                                 <TextBlock x:Name="name" Text="{Binding name}" Margin="10,0,10,10" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontFamily="Comic Sans MS" FontSize="20" Foreground="Black" HorizontalAlignment="Right" />
                                 <TextBlock x:Name="advert_id" Text="{Binding advert_id}" Margin="10,0,10,10" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontFamily="Comic Sans MS" FontSize="20" Foreground="Black" HorizontalAlignment="Right" />
+                                <TextBlock x:Name="owner" Text="{Binding owner}" Margin="10,0,10,10" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontFamily="Comic Sans MS" FontSize="20" Foreground="Black" HorizontalAlignment="Right" Visibility="Collapsed" />
                             </StackPanel>
                             <toolkit:ContextMenuService.ContextMenu  >
                                 <toolkit:ContextMenu>
-                                    <toolkit:MenuItem x:Name="Follow" Header="Ответить"/>
-                                    <toolkit:MenuItem x:Name="Delete" Header="Пожаловаться"/>
+                                    <toolkit:MenuItem x:Name="Tell" Header="Ответить на объявление" Click="Tell"/>
+                                    <toolkit:MenuItem x:Name="Bad" Header="Пожаловаться на объявление" Click="Bad_Click"/>
                                 </toolkit:ContextMenu>
                             </toolkit:ContextMenuService.ContextMenu>
                         </StackPanel>
@@ -54,6 +55,7 @@
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" BackgroundColor="#F34725">
             <shell:ApplicationBarIconButton IconUri="/Images/Erase.png" Text="Выйти" Click="Logout"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/Refresh.png" Text="Обновить" Click="RefreshPage"/>
             <shell:ApplicationBarIconButton IconUri="/Images/Add.png" Text="Добавить" Click="Add"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>

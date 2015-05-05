@@ -62,7 +62,7 @@
                     </TextBlock>
 
 
-                    <Button x:Name="WithAction" Content="ВСТУПИТЬ И ПРИГЛАСИТЬ ДРУЗЕЙ" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="480" Background="#FFF34725" BorderBrush="#FFE88D7B" Foreground="White" Click="WithAction_Click"/>
+                    <Button x:Name="WithAction" Content="ВСТУПИТЬ В ГРУППУ" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="480" Background="#FFF34725" BorderBrush="#FFE88D7B" Foreground="White" Click="WithAction_Click"/>
                     <Button x:Name="WithoutAction" Content="ПРОДОЛЖИТЬ" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="480" Background="White" BorderBrush="#FFE88D7B" Foreground="#FFE88D7B" Click="WithoutAction_Click"/>
                 </StackPanel>
 

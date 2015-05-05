@@ -50,7 +50,7 @@ typeof(double), typeof(MenuPage), new PropertyMetadata(new PropertyChangedCallba
                     {
                         string[] text = s.Split(new Char[] { '|' });
                         string[] big_text = free.GetAdvert(text[0]).Split(new Char[] { '/' });
-                        page.list_ads.Items.Add(new Adverts() { low_text = text[1], name = big_text[3], big_text = big_text[2], advert_id = "# " + text[0], ImagePath = "http://109.120.164.212/photos/" + text[0] + ".jpg" + "?" + Guid.NewGuid().ToString() });
+                        page.list_ads.Items.Add(new Adverts() { owner = big_text[0], low_text = text[1], name = big_text[3], big_text = big_text[2], advert_id = "# " + text[0], ImagePath = "http://109.120.164.212/photos/" + text[0] + ".jpg" + "?" + Guid.NewGuid().ToString() });
                         n = Int32.Parse(text[0]);  
                     }
                 }
@@ -134,12 +134,18 @@ typeof(double), typeof(MenuPage), new PropertyMetadata(new PropertyChangedCallba
                     {
                         string[] text = s.Split(new Char[] { '|' });
                         string[] big_text = free.GetAdvert(text[0]).Split(new Char[] { '/' });
-                        list_ads.Items.Add(new Adverts() { low_text = text[1],name = big_text[3], big_text = big_text[2], advert_id = "# " + text[0], ImagePath = "http://109.120.164.212/photos/" + text[0] + ".jpg" + "?" + Guid.NewGuid().ToString() });
+                        list_ads.Items.Add(new Adverts() { owner = big_text[0], low_text = text[1], name = big_text[3], big_text = big_text[2], advert_id = "# " + text[0], ImagePath = "http://109.120.164.212/photos/" + text[0] + ".jpg" + "?" + Guid.NewGuid().ToString() });
                         n = Int32.Parse(text[0]);                    
                     }
                 }
                 advert_id = n - 1;
             }
+        }
+
+        private void Refresh()
+        {
+            free.Close();
+            NavigationService.Navigate(new Uri("/MenuPage.xaml?" + DateTime.Now.Ticks, UriKind.Relative));
         }
 
         private void PhoneApplicationPage_BackKeyPress(object sender, System.ComponentModel.CancelEventArgs e)
@@ -174,6 +180,38 @@ typeof(double), typeof(MenuPage), new PropertyMetadata(new PropertyChangedCallba
         private void Add(object sender, EventArgs e)
         {
             NavigationService.Navigate(new Uri("/AddPage.xaml", UriKind.Relative));
+        }
+
+        private void RefreshPage(object sender, EventArgs e)
+        {
+            Refresh();
+        }
+
+        private void Tell(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/TellPage.xaml", UriKind.Relative));
+        }
+
+        private void Profile_panel_Hold(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            object owner = ((StackPanel)sender).FindName("owner");
+            if (owner is TextBlock)
+            {
+                TextBlock wantedChild = owner as TextBlock;
+                PublicData.owner_id = wantedChild.Text;
+            }
+
+            object advert = ((StackPanel)sender).FindName("advert_id");
+            if (advert is TextBlock)
+            {
+                TextBlock wantedChild = advert as TextBlock;
+                PublicData.advert_id = wantedChild.Text.Split(new Char[] { ' ' })[1];
+            }
+        }
+
+        private void Bad_Click(object sender, RoutedEventArgs e)
+        {
+            free.BadAdvert(PublicData.owner_id, PublicData.advert_id);
         }
     }
 }

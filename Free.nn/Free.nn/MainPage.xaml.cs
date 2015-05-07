@@ -35,16 +35,21 @@ namespace Free.nn
             }
             else
             {
+                //MessageBox.Show(free.App_ID().ToString());
                 browser.Navigate(new Uri("https://oauth.vk.com/authorize?client_id="+free.App_ID()+"&redirect_uri=https://oauth.vk.com/blank.html&scope=wall,groups,messages,email,friends&display=wap&response_type=token"));
             }
         }
 
         void OnLoadCompleted(object sender, NavigationEventArgs e)
         {
+            //MessageBox.Show("here");
             string responceData = e.Uri.OriginalString;
             if (responceData.Contains("access_token") && responceData.Contains("id"))
             {
                 browser.Visibility = Visibility.Collapsed;
+                icon.Visibility = Visibility.Visible;
+                Progress.Visibility = Visibility.Visible; 
+
                 string[] parameters = responceData.Split('#')[1].Split('&');
                 PublicData.accessToken = parameters[0].Substring(parameters[0].IndexOf("=", StringComparison.Ordinal)).Remove(0, 1);
                 PublicData.id = parameters[2].Remove(0, 8);
@@ -85,7 +90,7 @@ namespace Free.nn
             XDocument xml = XDocument.Load(e.Result);
             //MessageBox.Show(xml.Root.ToString());
 
-            if (xml.Root.ToString().Contains("<error_code>104</error_code>"))
+            if (xml.Root.ToString().Contains("<error_code>"))
             {
                 int a = free.CheckUser(PublicData.id, PublicData.first_name + " " + PublicData.last_name);
                 if (a == 0)

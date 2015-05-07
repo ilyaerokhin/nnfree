@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="698C2819-12A8-4F23-98B7-B85F0146B9C0" Publisher="CN=Илья" Version="1.0.0.0" />
+  <Identity Name="35448ilya.erokhin.27004828961B" Publisher="CN=698C2819-12A8-4F23-98B7-B85F0146B9C0" Version="1.0.0.2" />
   <mp:PhoneIdentity PhoneProductId="85073cc6-829f-4b4d-a5e2-b1fc6b37014f" PhonePublisherId="d5a976e4-67a7-4d5d-a672-eb42a011fc72" />
   <Properties>
-    <DisplayName>35448ilya.erokhin.27004828961B</DisplayName>
+    <DisplayName>Free.nn</DisplayName>
     <PublisherDisplayName>ilya.erokhin</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -15,11 +15,11 @@
     <Resource Language="x-generate" />
   </Resources>
   <Applications>
-    <Application Id="App" Executable="AGHost.exe" EntryPoint="NavigationPage.xaml">
-      <m3:VisualElements DisplayName="Бесплатный Нижний" Square150x150Logo="Assets\SquareTile150x150.png" Square44x44Logo="Assets\Logo.png" Description="Free.nn" ForegroundText="light" BackgroundColor="#464646">
-        <m3:DefaultTile Square71x71Logo="Assets\SquareTile71x71.png">
+    <Application Id="App" Executable="AGHost.exe" EntryPoint="MainPage.xaml">
+      <m3:VisualElements DisplayName="Бесплатный Нижний" Square150x150Logo="Assets\MyLogo1.png" Square44x44Logo="Assets\MyLogo2.png" Description="Free.nn" ForegroundText="light" BackgroundColor="#464646">
+        <m3:DefaultTile Square71x71Logo="Assets\MyLogo5.png">
         </m3:DefaultTile>
-        <m3:SplashScreen Image="Assets\SplashScreen.png" />
+        <m3:SplashScreen Image="Assets\MyLogo6.png" />
       </m3:VisualElements>
       <Extensions>
         <Extension Category="windows.backgroundTasks" EntryPoint="AgHost.BackgroundTask">

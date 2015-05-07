@@ -20,7 +20,8 @@
             <Image Source="/Assets/Logo.scale-240.png" Margin="10,0,400,1" Stretch="UniformToFill"/>
         </Grid>
         <phone:WebBrowser x:Name="browser" IsScriptEnabled="True" LoadCompleted="OnLoadCompleted" HorizontalAlignment="Left" VerticalAlignment="Top" Height="701" Width="480" Margin="0,67,0,0" Visibility="Collapsed"/>
-        <Image x:Name="icon" HorizontalAlignment="Center" Height="360" VerticalAlignment="Center"  Source="/Assets/Logo.scale-240.png" Stretch="None" Margin="60,204"/>
+        <Image x:Name="icon" HorizontalAlignment="Center" Height="360" VerticalAlignment="Center"  Source="/Assets/MyLogo4.png" Stretch="None" Margin="60,204"/>
+        <ProgressBar x:Name="Progress" HorizontalAlignment="Left" Height="10" Margin="10,571,0,0" VerticalAlignment="Top" Width="460" IsHitTestVisible="True" IsIndeterminate="True" Foreground="White" Visibility="Collapsed"/>
     </Grid>
 
 </phone:PhoneApplicationPage>

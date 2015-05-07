@@ -172,50 +172,27 @@
     <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\packages\WPtoolkit.4.2013.08.16\lib\wp8\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll">
       <PackagePath>zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\AlignmentGrid.png">
-      <PackagePath>Assets\AlignmentGrid.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\ApplicationIcon.png">
-      <PackagePath>Assets\ApplicationIcon.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\BadgeLogo.png">
-      <PackagePath>Assets\BadgeLogo.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\Logo.png">
-      <PackagePath>Assets\Logo.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\MyLogo1.png">
+      <PackagePath>Assets\MyLogo1.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\Logo.scale-240.png">
-      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\MyLogo2.png">
+      <PackagePath>Assets\MyLogo2.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\SmallLogo.scale-240.png">
-      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\MyLogo3.png">
+      <PackagePath>Assets\MyLogo3.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\SplashScreen.png">
-      <PackagePath>Assets\SplashScreen.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\MyLogo4.png">
+      <PackagePath>Assets\MyLogo4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\MyLogo5.png">
+      <PackagePath>Assets\MyLogo5.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\Square71x71Logo.scale-240.png">
-      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\SquareTile150x150.png">
-      <PackagePath>Assets\SquareTile150x150.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\MyLogo6.png">
+      <PackagePath>Assets\MyLogo6.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\SquareTile71x71.png">
-      <PackagePath>Assets\SquareTile71x71.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\StoreLogo.png">
-      <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\WideLogo.png">
-      <PackagePath>Assets\WideLogo.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Assets\WideLogo.scale-240.png">
-      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Images\Add.png">
       <PackagePath>Images\Add.png</PackagePath>

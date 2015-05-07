@@ -57,13 +57,11 @@ C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.n
 C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Bin\Release\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Bin\Release\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\Bin\Release\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\obj\Release\Free.nn.csprojResolveAssemblyReference.cache
 C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\obj\Release\App.g.cs
 C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\obj\Release\AddPage.g.cs
 C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\obj\Release\AgreementPage.g.cs
 C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\obj\Release\MainPage.g.cs
 C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\obj\Release\MenuPage.g.cs
-C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\obj\Release\NavigationPage.g.cs
 C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\obj\Release\TellPage.g.cs
 C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\obj\Release\Free.nn.g.resources
 C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\obj\Release\Free.nn.Resources.AppResources.resources
@@ -84,3 +82,4 @@ C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.n
 C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\obj\Release\ProjectArchitectures.txt
 C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\obj\Release\MDILProjectFiles.xml
 C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\obj\Release\XapCacheFile.xml
+C:\Users\user\Documents\Visual Studio 2013\Projects\nnfree\nnfree\Free.nn\Free.nn\obj\Release\Free.nn.csprojResolveAssemblyReference.cache

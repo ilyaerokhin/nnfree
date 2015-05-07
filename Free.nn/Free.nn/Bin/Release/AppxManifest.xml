@@ -7,10 +7,10 @@
 
  Дополнительные сведения о файлах манифестов приложений см. по адресу http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="698C2819-12A8-4F23-98B7-B85F0146B9C0" Publisher="CN=Илья" Version="1.0.0.0" ProcessorArchitecture="neutral" />
+  <Identity Name="35448ilya.erokhin.27004828961B" Publisher="CN=Илья" Version="1.0.0.0" ProcessorArchitecture="neutral" />
   <mp:PhoneIdentity PhoneProductId="85073cc6-829f-4b4d-a5e2-b1fc6b37014f" PhonePublisherId="d5a976e4-67a7-4d5d-a672-eb42a011fc72" />
   <Properties>
-    <DisplayName>35448ilya.erokhin.27004828961B</DisplayName>
+    <DisplayName>ms-resource:appDisplayName</DisplayName>
     <PublisherDisplayName>ilya.erokhin</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>

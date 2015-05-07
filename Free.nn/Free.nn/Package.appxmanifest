@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="35448ilya.erokhin.27004828961B" Publisher="CN=Илья" Version="1.0.0.0" />
+  <Identity Name="698C2819-12A8-4F23-98B7-B85F0146B9C0" Publisher="CN=Илья" Version="1.0.0.0" />
   <mp:PhoneIdentity PhoneProductId="85073cc6-829f-4b4d-a5e2-b1fc6b37014f" PhonePublisherId="d5a976e4-67a7-4d5d-a672-eb42a011fc72" />
   <Properties>
-    <DisplayName>ms-resource:appDisplayName</DisplayName>
+    <DisplayName>35448ilya.erokhin.27004828961B</DisplayName>
     <PublisherDisplayName>ilya.erokhin</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
